@@ -1,1 +1,68 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estructura con Tablas</title>
+</head>
+<body>
+  <table border="1" width="100%" cellspacing="0" cellpadding="10">
+    <!-- Fila 1: Encabezado -->
+    <tr>
+      <td width="20%">Logo</td>
+      <td><h2><b>Mis sabores favoritos</b></h2></td>
+      <td width="20%">
+        <table border="1" width="100%">
+          <tr>
+            <td>@jairalexander23</td>
+            <td>@Jair</td>
+            <td>3228694004</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Fila 2: Contenido -->
+    <tr>
+      <!-- Columna izquierda (menú) -->
+      <td valign="top">
+        <table border="1" width="100%" cellspacing="5" cellpadding="5">
+          <tr><td>Acido 🟢</td></tr>
+          <tr><td>Dulce 🔴</td></tr>
+          <tr><td>Agrio ⚫</td></tr>
+          <tr><td>Salado 🟠</td></tr>
+        </table>
+      </td>
+
+      <!-- Columna central (contenido con subtítulos y bloques) -->
+      <td colspan="2" valign="top">
+        <table border="1" width="100%" cellspacing="10" cellpadding="10">
+          <!-- Texto principal -->
+          <tr>
+            <td colspan="3"><h3><b>Tres sabores favoritos 👅</b></h3></td>
+          </tr>
+          <!-- Tres columnas de contenido -->
+          <tr>
+            <td><b>1. Salado </b><br>Independientemente del momento me gusta</td>
+            <td><b>2. Dulce</b><br>Es rico pero empalagoso con lo minimo</td>
+            <td><b>3. Acido</b><br>Muy ocasional pero preferible ante el agrio</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Fila 3: Pie de página -->
+    <tr>
+      <td colspan="3">
+        <table border="1" width="100%">
+          <tr>
+            <td>Agrio sabor evitable</td>
+            <td>Salado sabor favorito</td>
+            <td>Acido sabor ocasional</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
