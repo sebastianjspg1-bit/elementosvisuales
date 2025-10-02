@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWASAKI - PC GAMER</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 20px;
+            color: #f0f0f0;
+        }
+        
+        .main-table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .header-row {
+            background: linear-gradient(135deg, #2de000 0%, #1f9e00 100%);
+            padding: 0;
+        }
+        
+        .header-content {
+            width: 100%;
+            background-color: #2a2a2a;
+            border-bottom: 3px solid #2de000;
+        }
+        
+        .brand-section {
+             display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            padding: 15px 0 15px 15px;
+        }
+        
+        .brand-name {
+            color: #2de000;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(45, 224, 0, 0.3);
+            margin-left: 10px;
+        }
+        
+        .social-section {
+             padding: 10px 0;
+            position: relative;
+            right: -80px; 
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        
+        .content-row {
+            background-color: #2a2a2a;
+        }
+        
+        .button-section {
+            padding: 20px;
+            width: 20%;
+        }
+        
+        .button-container {
+            width: 100%;
+            background-color: transparent;
+        }
+        
+        .redirect-button {
+            background: linear-gradient(to bottom, #2de000, #1f9e00);
+            color: #000;
+            border: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.3s;
+            width: 100%;
+            margin: 8px 0;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .redirect-button:hover {
+            background: linear-gradient(to bottom, #3bff00, #2de000);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+        }
+        .redirect-button-image1 {
+        width: auto;
+        padding: 1px 45px;
+        min-width: 80px;
+        }
+        .redirect-button-image2 {
+        width: auto;
+        padding: 1px 55px;
+        min-width: 80px;
+        }
+        .redirect-button-image3 {
+         width: 160px;
+        padding: 12px 10px;
+        height: auto;
+        }
+        .redirect-button-image4 {
+         width: 160px;
+        padding: 17px 10px;
+        height: auto;
+        }
+        .video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        }
+        .specs-section {
+            padding: 20px;
+            width: 80%;
+        }
+        
+        .specs-container {
+            width: 100%;
+            background-color: #333;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .spec-item {
+            background: linear-gradient(135deg, #3dcefa 0%, #2a9dc7 100%);
+            color: #000;
+            padding: 12px 8px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        
+        .spec-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .footer-row {
+            background-color: #2a2a2a;
+        }
+        
+        .footer-content {
+            width: 100%;
+            background-color: #333;
+            border-top: 3px solid #2de000;
+            padding: 15px 0;
+        }
+        
+        .footer-item {
+            color: #3dcefa;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo {
+            filter: drop-shadow(0 0 5px rgba(45, 224, 0, 0.5));
+        }
+    </style>
+</head>
+<body>
+    <table class="main-table" border="0" cellpadding="0" cellspacing="0">
+        <!-- Header Row -->
+        <tr class="header-row">
+            <td>
+                <table class="header-content" border="0" width="100%">
+                    <tr>
+                        <td align="center">
+                            <table border="0" width="100%">
+                                <tr>
+                                    <td align="center" class="brand-section">
+                                        <img class="logo" src="parcial/Kawasaki-River-Mark-removebg-preview.png" alt="Kawasaki Logo" width="60px">
+                                        <div class="brand-name">KAWASAKI</div>
+                                    </td>
+                                    <td class="social-section">
+                                        <div class="social-icons">
+                                            <a href="https://www.instagram.com/kawasaki_colombia/" target="_blank">
+                                                <img src="parcial/instagram.webp" alt="Instagram" width="50px">
+                                            </a>
+                                            <a href="https://www.facebook.com/kawasakicolombia/" target="_blank">
+                                                <img src="parcial/facebook.webp" alt="Facebook" width="50px">
+                                            </a>
+                                            <a href="https://www.youtube.com/kawasakimotors" target="_blank" style="margin-top: 4px; display: inline-block;">
+                                            <img src="parcial/youtube.webp" alt="YouTube" width="42px">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>  
+        <tr class="content-row">
+            <td>
+                <table align="center" border="0" width="100%">
+                    <tr>
+                        <td class="button-section">
+                            <table class="button-container" align="center" border="0" width="80%">
+                                <tr>
+                                    <td align="center">
+                                        <a href="https://www.kawasaki.com/en-us/motorcycle/ninja/hypersport/ninja-h2r" target="_blank" style="text-decoration: none;">
+                                        <button class="redirect-button redirect-button-image1">
+                                        <img src="parcial/ninja.png" alt="ninja" width="70px">
+                                        </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <a href="https://www.kawasaki.com/en-us/motorcycle/z/z-hypernaked/z-h2">
+                                        <button class="redirect-button redirect-button-image2">
+                                        <img src="parcial/gamz.png" alt="gamz" width="50px">
+                                        </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <a href="https://www.kawasaki.com/en-us/motorcycle/eliminator/cruiser/eliminator">
+                                        <button class="redirect-button redirect-button-image3">
+                                        <img src="parcial/eliminator.png" alt="eliminator" width="120px">
+                                        </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <a href="https://www.kawasaki.com/en-us/motorcycle/versys/adventure-touring/versys-1100-se-lt">
+                                        <button class="redirect-button redirect-button-image4">
+                                        <img src="parcial/VERSYS.webp" alt="VERSYS" width="120px">
+                                        </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td >
+                            <table  align="center" border="0" width="90%">
+                                <tr>
+                                    <td>
+                                        <div class="specs-grid">
+                                            <div>
+                                                <img src="parcial/giphy2.gif" alt="giphy2" width="250px">
+                                            </div>
+                                            <div><img src="parcial/h2r.gif" alt="h2r" width="250px">
+                                            </div>
+                                            <div><img src="parcial/z900.jpg" alt="z900" width="250px">
+                                            </div>
+                                        </div>
+                                        <div class="specs-grid">
+                                            <div class="video-container">
+                                                <iframe width="250" height="205" src="https://www.youtube.com/embed/cju7Y2uMJl0?si=qZvTVQG0mdr3kE3j&amp;controls=0&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="video-container"><iframe width="250" height="205" src="https://www.youtube.com/embed/7w8PiwWGOns?si=rBBnRC3VTl1XH2KC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="footer-row">
+            <td>
+                <table class="footer-content" border="0" width="100%">
+                    <tr>
+    <td align="left" class="footer-item" style="border-right: 2px solid #2de000; padding: 20px 40px;">
+        <div style="font-size: 28px; font-weight: bold; color: #2de000; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; text-align: left;">NEWS</div>
+        <div style="font-size: 16px; color: #ffffff; line-height: 1.8; text-align: left;">
+            Awards & Reviews<br>
+            Press Releases<br>
+            Recalls
+        </div>
+    </td>
+    <td align="left" class="footer-item" style="padding: 20px 40px;">
+        <div style="font-size: 26px; font-weight: bold; color: #2de000; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; text-align: left;">DEALER INFO</div>
+        <div style="font-size: 16px; color: #f0f0f0; line-height: 1.8; text-align: left;">
+            Dealer Locator<br>
+            Become a Dealer
+        </div>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
